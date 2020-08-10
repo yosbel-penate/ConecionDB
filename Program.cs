@@ -21,7 +21,7 @@ namespace ConecionDB
             SqlDataReader registro = comando.ExecuteReader();
 
             int i = 0;
-            while (registro.Read() && i++ < 50)
+            while (registro.Read() && i++ < 60)
             {
                 string nombre = registro["FirstName"].ToString();
                 string apellidos = registro["MiddleName"].ToString();
